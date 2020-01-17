@@ -7,8 +7,8 @@ const express = require( "express" );
 const hbs = require( "hbs" );
 
 //Custom Modules
-const forecast = require( "./utilities/forecast.js" );
-const geoCode = require( "./utilities/geoCode.js" );
+const forecast = require( "src/utilities/forecast.js" );
+const geoCode = require( "src/utilities/geoCode.js" );
 const log = console.log;
 
 //Define paths for Express config
