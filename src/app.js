@@ -16,8 +16,10 @@ const partialsPath = path.join( __dirname, "../templates/partials" );
 const publicDir = path.join( __dirname, "../public" );
 const viewsPath = path.join( __dirname, "../templates/views" );
 
-
+//Express and Port references
 const app = express();
+const port = process.env.PORT || 3000;
+
 
 app.set( "view engine", "hbs" );
 app.set( "views", viewsPath );
@@ -97,6 +99,6 @@ app.get( "*", ( req, res ) => {
 
 
 //Start the server up on port 3000
-app.listen( 3000, () => {
-    log( "Hey the serving is running! Get to it....you know....the code.... :)" );
+app.listen( port, () => {
+    log( `Server running on port: ${ port }` );
 });

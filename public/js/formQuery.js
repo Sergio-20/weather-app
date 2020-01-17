@@ -7,7 +7,7 @@ searchForm.addEventListener( "submit", e => {
 
     let searchTerm = document.querySelector( "#search" ).value;
 
-    fetch( `http://localhost:3000/weather?address=${ searchTerm }` )
+    fetch( `/weather?address=${ searchTerm }` )
     .then( (res) => {
       return res.json();  
     })
