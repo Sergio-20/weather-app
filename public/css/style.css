@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+html { 
+  font-family: "Rubik", sans-serif; 
+  line-height: 1.2;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.6; }
+h1, h3, h5 { color: #cb2728; }
+h2, h4, h6 { color: #444; }
+
+a, p, li { color: #444; }
+
+a {
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+
+/********* IDs *********/
+
+#site-footer a, #site-header a {
+  color: #fff;
+}
+
+a:hover {
+  color: #cb2728;
+  text-decoration: underline;
+}
+
+#content-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+#query-form { margin: 1.5rem auto; }
+
+#query-form #search { border-radius: 0.25rem; padding: 0.3rem; }
+
+#site-footer { margin: 0 auto; max-width: 900px; }
+
+#site-footer, #site-header {
+  background: #222;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#site-footer li, #site-header li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 0.5rem;
+}
+
+
+/********* Classes *********/
+
+.btn {
+  background: #0facf3;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 0.5rem;
+  opacity: 0.7;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn:hover { 
+  cursor: pointer; 
+  opacity: 1;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+
+.search-results { display: none; }
